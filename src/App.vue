@@ -66,6 +66,9 @@
         </button>
       </div>
     </div>
+    <div class="footer">
+      <p>Sergio Klein</p>
+    </div>
   </div>
 </template>
 
@@ -132,7 +135,7 @@ export default {
 .container {
   display: grid;
   grid-template-columns: [first] 5% [main] auto [last] 5%;
-  grid-template-rows: [header] 50px [form] 50px [buttons] 50px [body] auto [footer] 30px;
+  grid-template-rows: [header] 50px [form] 50px [buttons] 50px [body] auto [footer] 50px;
   place-items:  center;
   background-color: rgb(76, 76, 125);
 }
@@ -141,6 +144,7 @@ export default {
   grid-column-start: main;
   grid-row-start: header;
   
+  color:  whitesmoke;
   margin: 5px;
 }
 
@@ -163,6 +167,11 @@ export default {
   place-self: stretch;
 }
 
+.footer {
+  grid-column-start: main;
+  grid-row-start: footer;
+  color: white;
+}
 .main-container {
   display: grid;
   grid-template-columns: [left] 65% [right2] auto [right1] auto [right] auto;
